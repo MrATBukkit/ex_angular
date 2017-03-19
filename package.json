@@ -1,0 +1,22 @@
+{
+  "name": "ex_angular",
+  "version": "1.3.2",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "preferGlobal": true,
+  "bin": {
+	  "ex_angular": "./bin/ex_angular.bat"
+  },
+  "keywords": [
+    "angular2",
+    "express.js",
+    "generator",
+	"cli"
+  ],
+  "author": "Hermann Walzl",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
+}
