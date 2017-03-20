@@ -38,7 +38,7 @@ r1.question('Please specify the App-Name: ', appname =>{
 
   process.chdir(path.basename(process.cwd()+"\\"+appname));
   console.log(chalk.blue("Now installing Express and Body Parser"))
-  child = exec("npm install", function (error, stdout, stderr) {
+  child = exec("yarn install", function (error, stdout, stderr) {
     if (error !== null) {
       return console.log(chalk.red('exec error: ' + error));
     }
@@ -46,7 +46,7 @@ r1.question('Please specify the App-Name: ', appname =>{
     brogfinisch("angular")
   });
 
-  child = exec("npm install --save express body-parser", function (error, stdout, stderr) {
+  child = exec("yarn add --save express body-parser", function (error, stdout, stderr) {
     if (error !== null) {
       console.log(chalk.red('Express and body-parser cann\'t be installed: ' + error));
       return;
@@ -55,7 +55,7 @@ r1.question('Please specify the App-Name: ', appname =>{
     brogfinisch("express")
   });
 
-  child = exec("npm install --save-dev nodemon", function (error, stdout, stderr) {
+  child = exec("yarn add --save-dev nodemon", function (error, stdout, stderr) {
     if (error !== null) {
       console.log(chalk.red('nodemon cannt be installed ' + error));
       return;
