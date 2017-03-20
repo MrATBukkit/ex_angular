@@ -46,7 +46,7 @@ r1.question('Please specify the App-Name: ', appname =>{
     brogfinisch("angular")
   });
 
-  child = exec("yarn add --save express body-parser", function (error, stdout, stderr) {
+  child = exec("yarn add express body-parser", function (error, stdout, stderr) {
     if (error !== null) {
       console.log(chalk.red('Express and body-parser cann\'t be installed: ' + error));
       return;
@@ -55,7 +55,7 @@ r1.question('Please specify the App-Name: ', appname =>{
     brogfinisch("express")
   });
 
-  child = exec("yarn add --save-dev nodemon", function (error, stdout, stderr) {
+  child = exec("yarn add nodemon --dev", function (error, stdout, stderr) {
     if (error !== null) {
       console.log(chalk.red('nodemon cannt be installed ' + error));
       return;
